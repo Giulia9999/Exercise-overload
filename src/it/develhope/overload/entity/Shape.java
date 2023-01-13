@@ -1,4 +1,4 @@
-package it.develhope.overload.entities;
+package it.develhope.overload.entity;
 
 public class Shape {
     public String shapeName;
@@ -23,7 +23,7 @@ public class Shape {
      * Overload Shape constructor 2 (Square)
      * @param squareName The name of the shape
      * @param edges edges of the square
-     * @param edgeLength the square edge lenght
+     * @param edgeLength the square edge length
      */
     public Shape(String squareName,int edges, double edgeLength){
         System.out.println("Square object created");
@@ -56,6 +56,11 @@ public class Shape {
         System.out.println("Triangle object created");
         this.shapeName = triangleName;
         this.numberOfEdges = edges;
+    }
+
+    public String getShapeDetails(){
+        if(shapeName == null) return "Undefined shape";
+        return shapeName + " - " + numberOfEdges;
     }
 
 
