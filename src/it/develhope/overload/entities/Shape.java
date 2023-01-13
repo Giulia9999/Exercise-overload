@@ -44,5 +44,19 @@ public class Shape {
         this.numberOfEdges = edges;
     }
 
+    /**
+     * Overload Shape constructor 4 (triangle)
+     * @param triangleName The name of the shape
+     * @param edges Edges of the triangle
+     * @param e1 First triangle edge
+     * @param e2 Second triangle edge
+     * @param e3 Third triangle edge
+     */
+    public Shape(String triangleName,int edges, double e1, double e2, double e3){
+        System.out.println("Triangle object created");
+        this.shapeName = triangleName;
+        this.numberOfEdges = edges;
+    }
+
 
 }
