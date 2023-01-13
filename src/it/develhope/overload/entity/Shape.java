@@ -1,8 +1,8 @@
 package it.develhope.overload.entity;
 
 public class Shape {
-    public String shapeName;
-    public int numberOfEdges;
+    private String shapeName;
+    private int numberOfEdges;
 
     public Shape(){
         System.out.println("Shape object created");
